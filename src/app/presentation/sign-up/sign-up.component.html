@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <h1>Cadastrar</h1>
+
+  <form [formGroup]="form" (ngSubmit)="signUp()" class="form-group">
+    <mat-form-field appearance="standard" class="form-control">
+      <mat-label>Email ou celular</mat-label>
+      <input matInput formControlName="emailOrPhone" >
+      <mat-error>Campo obrigatório</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="standard" class="form-control">
+      <mat-label>Crie uma senha</mat-label>
+      <input type="password" matInput formControlName="password" >
+      <mat-error>Campo obrigatório</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="standard" class="form-control">
+      <mat-label>Confirme a senha</mat-label>
+      <input type="password" matInput formControlName="confirmPassword" >
+      <mat-error>Campo obrigatório</mat-error>
+    </mat-form-field>
+
+    <button class="rounded-button" mat-raised-button color="primary">Cadastrar</button>
+  </form>
+</div>

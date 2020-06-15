@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <h1>Entrar</h1>
+
+  <form [formGroup]="form" (ngSubmit)="login()" class="form-group">
+    <mat-form-field appearance="standard" class="form-control">
+      <mat-label>Email ou celular</mat-label>
+      <input matInput formControlName="emailOrPhone">
+      <mat-error>Campo obrigatório</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="standard" class="form-control">
+      <mat-label>Senha</mat-label>
+      <input type="password" matInput formControlName="password">
+      <mat-error>Campo obrigatório</mat-error>
+    </mat-form-field>
+
+    <button class="rounded-button" mat-raised-button color="primary">Entrar</button>
+  </form>
+</div>

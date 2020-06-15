@@ -1,0 +1,29 @@
+@import '_palettes';
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+  background-color: $background;
+  color: $accent;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.form-group {
+  margin: 0;
+  padding: 0;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.rounded-button {
+  border-radius: 25px !important;
+}

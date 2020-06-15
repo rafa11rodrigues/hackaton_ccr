@@ -1,0 +1,12 @@
+@import '_palettes';
+
+.wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded-button {
+  width: 100%;
+  margin: 10px 0;
+  border-color: $accent;
+}

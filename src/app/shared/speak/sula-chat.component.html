@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <app-back-header></app-back-header>
+
+  <div class="messages">
+    <p *ngFor="let m of messages; let i = index"
+        [ngClass]="{ 'user-message': (i % 2) === 1, 'sula-message': (i % 2) === 0 }"
+        class="message">
+      {{ m }}
+    </p>
+  </div>
+</div>
+
